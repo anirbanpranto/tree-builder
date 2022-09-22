@@ -20,8 +20,8 @@ Here 1 is root. 1 has two children, 2 and 3. 2 has two children None and 4, 3 ha
 So basically you write the array in a DFS manner. It starts from the root, then the children of root. Then children of first child and then children of second child and so on.
 
 ## Screenshots
-![code](https://github.com/anirbanpranto/tree-builder/resource/code.png)
-![output](https://github.com/anirbanpranto/tree-builder/resource/output.png)
+![code](https://github.com/anirbanpranto/tree-builder/blob/master/resource/code.png)
+![output](https://github.com/anirbanpranto/tree-builder/blob/master/resource/output.png)
 
 ## Contribution
 Feel free to contribute to make the code better and more usable.
