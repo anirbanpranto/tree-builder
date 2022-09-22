@@ -19,7 +19,7 @@ class BuildTree:
             head = queue.pop(0)
             if(head == None):
                 continue
-            if(i+1 < len(self.arr)):
+            if(i < len(self.arr)):
                 if self.arr[i]:
                     head.left = Node(self.arr[i])
                     queue.append(head.left)
