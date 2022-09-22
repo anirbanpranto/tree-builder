@@ -47,6 +47,22 @@ class BuildTree:
             self._print_tree(root.right)
 
 #test code, building binary tree from array definition
-tree = BuildTree([3,9,20,None,None,15,7])
-tree._print_tree(tree.root)
+tree = BuildTree([4,2,7,1,3,6,9])
+#tree._print_tree(tree.root)
 
+class Solution:
+    def invertTree(self, root):
+        if not root: 
+            return None
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+        temp = root.right
+        root.right = root.left
+        root.left = temp
+        return root
+
+sol = Solution()
+
+rt = sol.invertTree(tree.root)
+
+tree._print_tree(rt)
